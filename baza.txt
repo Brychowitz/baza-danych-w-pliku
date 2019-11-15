@@ -1,0 +1,4 @@
+1 Mariusz Srupa Programista 4000
+2 Jacek Swierszcz Mechanik 3000
+3 Jaroslaw Psikuta Gangster 6000
+4 Karol Kacs Elektryk 8000

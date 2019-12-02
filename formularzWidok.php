@@ -7,8 +7,6 @@
 
 
         <form action="index.php" method="post">
-            <!-- id:<br/> -->
-
             <?php
                 echo "<input type='hidden' name='id' value='$id'>";
                 echo "<input type='hidden' name='nextId' value='$nextId'>";

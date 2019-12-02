@@ -63,9 +63,18 @@
     foreach($tablica as $wiersz){
         $rekord = explode(" ", $wiersz);
 
-        if( (!empty($klucz) && strpos(strtolower($rekord[2]), strtolower($klucz) ) === 0) || $klucz==""){
+        if( (!empty($klucz) && strpos(strtolower($rekord[0]), strtolower($klucz) ) === 0) || $klucz==""){
             $tab[] = $wiersz;
         }
-    }
+        else if( (!empty($klucz) && strpos(strtolower($rekord[1]), strtolower($klucz) ) === 0) || $klucz==""){
+            $tab[] = $wiersz;
+        }
+        else if( (!empty($klucz) && strpos(strtolower($rekord[2]), strtolower($klucz) ) === 0) || $klucz==""){
+            $tab[] = $wiersz;
+        }
+        else if( (!empty($klucz) && strpos(strtolower($rekord[3]), strtolower($klucz) ) === 0) || $klucz==""){
+            $tab[] = $wiersz;
+        }
+}
 
 include 'widokListy.php';
